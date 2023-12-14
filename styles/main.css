@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section {
+  border-radius: 15px;
+  background-color: hsl(213, 19%, 18%);
+  margin: 20px 10px;
+  padding: 21px;
+}
+body p {
+  color: hsl(217, 12%, 63%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(216, 12%, 54%);
+  padding: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}/*# sourceMappingURL=main.css.map */
