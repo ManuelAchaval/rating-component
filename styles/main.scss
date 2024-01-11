@@ -1,46 +1,75 @@
-// ## Colors
-
-// ### Primary - Orange: hsl(25, 97%, 53%)
-// ### Neutral
-// - White: hsl(0, 0%, 100%)
-// - Light Grey: hsl(217, 12%, 63%)
-// - Medium Grey: hsl(216, 12%, 54%)
-// - Dark Blue: hsl(213, 19%, 18%)
-// - Very Dark Blue: hsl(216, 12%, 8%)
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+:root {
+    /* Para agregar colores / otras props a usar (sintaxis: --nombre-separado-x-guiones*/
+    --primary-color:hsl(25, 97%, 53%);
+    --white-color:hsl(0, 0%, 100%);
+    --light-grey-color:hsl(217, 12%, 63%);
+    --medium-grey-color:hsl(216, 12%, 54%);
+    --dark-blue-color:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+    --font-overpass: 'Overpass', sans-serif;;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(216, 12%, 8%);
-    color: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: column;
+    background-color:var(--very-dark-blue);
+    color: var(--white-color);
     align-items: center;
+    position: relative;
+    font-family: var(--font-overpass);
     section{
         border-radius: 15px;
-        background-color: hsl(213, 19%, 18%);
+        background-color: var(--dark-blue-color);
         margin:20px 10px;
         padding: 21px;
+        max-width: 370px;
+        height: 390px;
+        justify-content: space-around;
     }
     p{
-        color: hsl(217, 12%, 63%);
+        color: var(--light-grey-color);
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0 ;
     }
 }
-
+.ds-flx-col{
+    display: flex;
+    flex-direction: column;
+}
 .attribution{
     position:absolute;
     bottom: 0;
 }
 .circulo{
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(216, 12%, 54%);
-    padding: 5px;
+    justify-content: center;
+    background-color: hsl(216deg 12% 54% / 21%);
+    color: var(--light-grey-color);
     border-radius: 50%;
     width: 25px;
     height: 25px;
+}
+
+.cont-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btn-submit{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: none;
+    padding: 15px;
+    border-radius: 23px;
 }
